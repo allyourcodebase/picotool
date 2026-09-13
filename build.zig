@@ -81,6 +81,7 @@ fn buildWithOptions(
         .target = target,
         .optimize = optimize,
         .@"system-libudev" = false,
+        .linkage = .static,
     });
 
     const binh = b.addExecutable(.{

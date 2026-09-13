@@ -6,15 +6,20 @@
 
 ## Picotool
 
-this repo builds the raspberry picotool from the sdk source on the zig buildsystem:
+this repo builds the raspberry picotool from the sdk source on the zig buildsystem.
+
+At the moment Debug and ReleaseSafe builds crash in libusb, use ReleaseFast or
+ReleaseSmall builds for flashing.
+
+you can run it directy from zig build:
 
 ```console
-foo@bar:~$ zig build run -- version
-picotool v2.3.0 (2.3.0, zig-0.16.0)
+foo@bar:~$ zig build -Doptimize=ReleaseSmall run -- version
+picotool v2.3.1 (2.3.1, zig-0.16.0)
 ```
 
 ```console
-foo@bar:~$ zig build run
+foo@bar:~$ zig build -Doptimize=ReleaseSmall run
 PICOTOOL:
     Tool for interacting with RP-series device(s) in BOOTSEL mode, or with an RP-series binary
 

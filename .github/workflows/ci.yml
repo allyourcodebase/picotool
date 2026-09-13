@@ -21,7 +21,7 @@ jobs:
         uses: mlugg/setup-zig@v2.0.5
 
       - name: Run `build`
-        run: zig build ci -Doptimize=ReleaseSafe
+        run: zig build ci -Doptimize=ReleaseSmall
 
       - uses: actions/upload-artifact@v4
         with:
