@@ -2,7 +2,7 @@
     .name = .picotool,
     .fingerprint = 0x43e93b6a456bd23e,
     .version = "2.3.1",
-    .minimum_zig_version = "0.16.0",
+    .minimum_zig_version = "0.17.0",
     .dependencies = .{
         .@"pico-sdk" = .{
             .url = "git+https://github.com/raspberrypi/pico-sdk.git?ref=2.3.1#079c6f39023649b154152db30f1d781e884879bc",
@@ -13,9 +13,8 @@
             .hash = "N-V-__8AAMI8bAA1OLWzkwIWAXNxVMZV0urvzoSeC9tRCB4G",
         },
         .libusb = .{
-            // todo: merge https://github.com/allyourcodebase/libusb/pull/19
-            .url = "git+https://github.com/ryanpz/libusb?ref=push-vlzsplzylymk#e14718d517462e4a17a567bf3608eed3f5bcb733",
-            .hash = "libusb-0.0.1-P02YQpKOFwBAho1_og2xDIiJXpOLKjuLTwCnbr7Lp2Nw",
+            .url = "git+https://github.com/allyourcodebase/libusb#5c2dc368e90ec27a3300e9ceba3935f822a1299b",
+            .hash = "libusb-0.0.1-P02YQpOOFwBm-tD_-xOj5eVK-dlEJZ-ukpMyDGkslb9t",
         },
     },
     .paths = .{
